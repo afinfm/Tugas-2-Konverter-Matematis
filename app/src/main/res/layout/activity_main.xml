@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity=""
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingTop="20dp">
+
+    <EditText
+        android:id="@+id/etIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18pt"
+        android:layout_marginBottom="10dp"
+        android:hint="Input" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/btSin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Sin" />
+
+        <Button
+            android:id="@+id/btCos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/btSin"
+            android:hint="Cos" />
+
+        <Button
+            android:id="@+id/btTan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/btCos"
+            android:hint="Tan" />
+
+        <Button
+            android:id="@+id/btCsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btSin"
+            android:hint="Csc" />
+
+        <Button
+            android:id="@+id/btSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btSin"
+            android:layout_toEndOf="@+id/btCsc"
+            android:hint="Sec" />
+
+        <Button
+            android:id="@+id/btCot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btSin"
+            android:layout_toEndOf="@+id/btSec"
+            android:hint="Cot" />
+
+        <Button
+            android:id="@+id/btLog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btSec"
+            android:hint="Log" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOut"
+        android:hint="0.0"
+        android:textSize="20pt"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
